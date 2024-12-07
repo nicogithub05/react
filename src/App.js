@@ -7,6 +7,7 @@ function App() {
        <TodoItem/>;
        <TodoItem/>;
        <TodoItem/>;
+       <TodoCount/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -32,6 +33,14 @@ function TodoItem() {
      <span>X</span>
   </li>
  
+}
+
+function TodoCount() {
+  return <h1>
+    Completaste 
+    3 de
+    5 todos
+  </h1>
 }
 
 export default App;
