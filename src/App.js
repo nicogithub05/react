@@ -2,8 +2,11 @@ import logo from './platzi.webp';
 import './App.css';
 
 function App() {
-  return (
+  return (    
     <div className="App">
+       <TodoItem/>;
+       <TodoItem/>;
+       <TodoItem/>;
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,6 +23,15 @@ function App() {
       </header>
     </div>
   );
+}
+// Creamos un componente con la primera palabra en mayúscula
+function TodoItem() {
+  return <li>
+     <span>V</span>,
+     <p>Llorar con la llorona</p>
+     <span>X</span>
+  </li>
+ 
 }
 
 export default App;
